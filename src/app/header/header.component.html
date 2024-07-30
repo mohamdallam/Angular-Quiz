@@ -1,0 +1,11 @@
+<header>
+  <mat-toolbar color="primary">
+    <span>User Dashboard</span>
+    <span class="spacer"></span>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Search User by ID</mat-label>
+      <input matInput (input)="onSearch($event)" />
+    </mat-form-field>
+  </mat-toolbar>
+</header>

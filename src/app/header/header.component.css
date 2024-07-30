@@ -1,0 +1,36 @@
+/* Style for the toolbar */
+mat-toolbar {
+  padding-top: 20px;
+  background-color: wheat; /* Customize background color */
+  color: black; /* Text color */
+  padding: 0 16px; /* Add padding to the sides */
+}
+
+/* Style for the search field */
+mat-form-field {
+  flex: 1; /* Allow search field to grow and fill space */
+  margin: 0 16px; /* Add margin to the sides of the search field */
+}
+
+/* Style for the input inside the form field */
+mat-form-field .mat-form-field-infix {
+  background-color: #ffffff; /* Background color of the input */
+  border-radius: 4px; /* Rounded corners for the input */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Style for the input label */
+mat-form-field .mat-form-field-label {
+  color: #333; /* Label color */
+}
+
+/* Spacer class to push elements apart */
+.spacer {
+  flex: 1;
+}
+
+/* Optional: Additional styling for the span elements inside the toolbar */
+mat-toolbar span {
+  font-size: 18px; /* Font size for the toolbar text */
+  font-weight: bold; /* Make text bold */
+}

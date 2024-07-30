@@ -1,0 +1,9 @@
+mat-card-actions {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  margin-top: 16px; /* Optional: Add some space above the buttons */
+}
+
+button {
+  margin: 0 8px; /* Optional: Add space between buttons */
+}

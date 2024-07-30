@@ -1,0 +1,28 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>User List</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div *ngIf="loading$ | async" class="loading">Loading...</div>
+    <mat-grid-list cols="3" rowHeight="2:1" *ngIf="!(loading$ | async)">
+      <mat-grid-tile *ngFor="let user of users$ | async">
+        <app-user-card
+          [user]="user"
+          (click)="navigateToUserDetails(user.id)"
+        ></app-user-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="previousPage()" [disabled]="page === 1">
+      Previous
+    </button>
+    <button
+      mat-button
+      (click)="nextPage()"
+      [disabled]="!(hasNextPage$ | async)"
+    >
+      Next
+    </button>
+  </mat-card-actions>
+</mat-card>

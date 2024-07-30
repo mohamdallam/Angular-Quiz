@@ -1,0 +1,10 @@
+<mat-card class="user-card">
+  <img
+    mat-card-image
+    [src]="user.avatar"
+    alt="{{ user.first_name }} {{ user.last_name }}"
+  />
+  <mat-card-content>
+    <p>{{ user.first_name }} {{ user.last_name }}</p>
+  </mat-card-content>
+</mat-card>
